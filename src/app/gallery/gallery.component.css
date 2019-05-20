@@ -1,0 +1,62 @@
+div{
+    color: azure;
+}
+
+
+.imagebox {
+    background: black;
+    padding: 0px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.imagebox img {
+    opacity: 1;
+    transition: 0.5s opacity;
+}
+
+.imagebox .imagebox-desc {
+    background-color: rgba(0, 0, 0, 0.6);
+    bottom: 0px;
+    color: white;
+    font-size: 1.2em;
+    left: 0px;
+    padding: 10px 15px;
+    position: absolute;
+    transition: 0.5s padding;
+    text-align: center;
+    width: 100%;
+}
+
+.imagebox:hover img {
+    opacity: 0.7;
+}
+
+.imagebox:hover .imagebox-desc {
+    padding-bottom: 10%;
+}
+
+
+
+.add{
+    text-align: center;
+    padding-top: 5%;
+}
+
+
+.btn {
+    display: inline-block;
+    background: rgb(220,220,220);
+    font-weight: bold;
+    color: rgb(120,120,120);
+    border-radius: 3px;
+    cursor: pointer;
+    transition: ease .3s;
+    margin: 5%;
+}
+
+.btn:hover{
+    background: #8BC34A;
+    color: #ffffff;
+}

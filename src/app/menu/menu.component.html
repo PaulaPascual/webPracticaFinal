@@ -1,0 +1,31 @@
+
+
+
+<nav id="nav" role="navigation">
+
+
+  <div class="options col-12" align='center'>
+    <a routerLink="/contact" >Contact me</a>
+    <a routerLink="/gallery">Gallery</a>
+
+    <a class="nav-link menu-item dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">More</a>
+    <div class="dropdown dropdown-menu">
+      <a target="_blank" rel="noopener noreferrer" class="dropdown-item menu-item" href="https://es.linkedin.com/in/paula-pascual-parra-913b81174">Linkedin</a>
+      <ul *ngIf="loggedUser == null" class="navbar-nav">
+        <a class="dropdown-item menu-item" routerLink="/login">Login</a>
+      </ul>
+
+      <ul *ngIf="loggedUser != null" class="navbar-nav">
+        <a class="dropdown-item menu-item" routerLink="/admi">Upload Image</a>
+        <button class="btn btn-link" (click)="logOutUser()">Logout</button>
+
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="logo col-3">
+    <img id="logo" class="img-fluid" src="assets/zorro.PNG"/>
+  </div>
+
+</nav>
